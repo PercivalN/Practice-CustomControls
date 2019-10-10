@@ -16,5 +16,8 @@ class ViewController: UIViewController {
 	}
 
 
+	@IBAction func changeBackground(_ sender: ColorPicker) {
+		view.backgroundColor = sender.selectedColor
+	}
 }
 

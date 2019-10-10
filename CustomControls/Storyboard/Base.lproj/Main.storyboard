@@ -18,19 +18,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bf5-zc-fPU">
-                                <rect key="frame" x="40" y="281" width="334" height="334"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bf5-zc-fPU" customClass="ColorPicker" customModule="CustomControls" customModuleProvider="target">
+                                <rect key="frame" x="20" y="242.5" width="374" height="411"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="bf5-zc-fPU" secondAttribute="height" multiplier="1:1" id="10G-7s-Ykw"/>
+                                    <constraint firstAttribute="width" secondItem="bf5-zc-fPU" secondAttribute="height" multiplier="1:1.1" id="10G-7s-Ykw"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="changeBackground:" destination="BYZ-38-t0r" eventType="valueChanged" id="uuq-Fx-TOy"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bf5-zc-fPU" secondAttribute="trailing" constant="40" id="5Lz-MJ-8gi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bf5-zc-fPU" secondAttribute="trailing" constant="20" id="5Lz-MJ-8gi"/>
                             <constraint firstItem="bf5-zc-fPU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Phh-ka-OcQ"/>
-                            <constraint firstItem="bf5-zc-fPU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="ku5-Qi-knl"/>
+                            <constraint firstItem="bf5-zc-fPU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ku5-Qi-knl"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
